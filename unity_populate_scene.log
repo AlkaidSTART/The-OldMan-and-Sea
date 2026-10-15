@@ -1,0 +1,428 @@
+Unity Editor version:    6000.6.5f1 (3ff58d469c8a)
+Branch:                  6000.6/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.6.2 (Build 25G83)
+Darwin version:          25.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-10-14T09:10:34Z
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 44685)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 44687)
+VBCSCompiler prewarm took 3.11 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-allure" at "2026-10-14T09:10:34.401234Z"
+Launching external process: /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/MacOS/Unity
+-batchmode
+-quit
+-projectPath
+/Users/allure/Desktop/oldman/unity-game
+-executeMethod
+OldManAndTheSea.Editor.GameSceneBuilder.GenerateScene
+-logfile
+/Users/allure/Desktop/oldman/unity_populate_scene.log
+Successfully changed project path to: /Users/allure/Desktop/oldman/unity-game
+/Users/allure/Desktop/oldman/unity-game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [8271421824]  Target information:
+
+Player connection [8271421824]  * "[IP] 192.168.1.102 [Port] 55504 [Flags] 2 [Guid] 3811347894 [EditorId] 3811347894 [Version] 1048832 [Id] OSXEditor(0,alluredeMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8271421824]  * "[IP] 198.18.0.1 [Port] 55504 [Flags] 2 [Guid] 3811347894 [EditorId] 3811347894 [Version] 1048832 [Id] OSXEditor(0,alluredeMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8271421824] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8271421824] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              e698804a82894875bba26221343690c4
+  Correlation Id:          4d0f3e2813d3c03123813ad97f710b24
+  External correlation Id: 4965497595460057021
+  Machine Id:              80SYXjaUztomINmSt+egxnFQgQ0=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-allure" (connect: 0.00s, validation: 0.00s, handshake: 0.39s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-allure-notifications" at "2026-10-14T09:10:34.79668Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 20067666265920-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.40s
+[Package Manager] Connected to IPC stream "Upm-44647" after 0.4 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: f4daf61e54b34f211f112e8051105e38
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052672
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Helpers/Unity.DataStore 
+Unity Data Store artifact dir = Library/DataStore, working dir = /Users/allure/Desktop/oldman/unity-gameUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.5f1 (3ff58d469c8a)
+[EntityIdStore] init: VM path (explicit commit), pageSize=16384, blockCount=262144, entitiesPerBlock=1024, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/allure/Desktop/oldman/unity-game/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M4 (high power)
+Metal devices available: 1
+0: Apple M4 (high power)
+Using device Apple M4 (high power)
+Initializing Metal device caps: Apple M4
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = '/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56647
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.6.5f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.6.5f1/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001094 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.525 seconds
+Domain Reload Profiling: 839ms
+	BeginReloadAssembly (80ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (3ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (185ms)
+		LoadAssemblies (75ms)
+		TypeCache.Refresh (131ms)
+			TypeCache.ScanAssembly (121ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (526ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (44ms)
+			ProcessInitializeOnLoadMethodAttributes (322ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 72 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.15 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.ai.navigation@a9c5744fc1de)
+    com.unity.analytics@3.8.2 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.analytics@c9d14a6bdec6)
+    com.unity.collab-proxy@2.13.6 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.inputsystem@1.20.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.purchasing@4.15.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.purchasing@ffbc76639aab)
+    com.unity.xr.legacyinputhelpers@3.0.1 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.xr.legacyinputhelpers@3f62d634f63b)
+    com.unity.services.core@1.18.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.services.core@3464cb68d709)
+    com.unity.ide.visualstudio@2.0.28 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.ide.visualstudio@b5edea5f33f4)
+    com.unity.ide.rider@3.0.40 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.ide.rider@e4950c6d131b)
+    com.unity.performance.profile-analyzer@1.4.2 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.performance.profile-analyzer@5491650411cd)
+    com.unity.testtools.codecoverage@1.3.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.testtools.codecoverage@19a841221620)
+    com.unity.services.analytics@6.3.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.services.analytics@cde4e6cf92f9)
+    com.unity.searcher@4.9.5 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.settings-manager@2.1.1 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.2d.sprite@752945c75a6f)
+    com.unity.2d.tilemap@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.2d.tilemap@f4c7bd71ac8a)
+    com.unity.feature.development@1.0.2 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.feature.development@767aadbc6eb7)
+    com.unity.multiplayer.center@2.0.1 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.multiplayer.center@01ba5271095b)
+    com.unity.render-pipelines.universal@17.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.render-pipelines.universal@2309ae255609)
+    com.unity.test-framework@1.8.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.test-framework@80f691d4262b)
+    com.unity.timeline@6.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.timeline@4891807c6bd8)
+    com.unity.ugui@2.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.ugui@42f0bd825000)
+    com.unity.modules.accessibility@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.render-pipelines.core@285af6b8c83f)
+    com.unity.shadergraph@17.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.shadergraph@58bcb150677d)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.editorcoroutines@6.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.editorcoroutines@8cd72baa102a)
+    com.unity.graph-authoring@1.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: /Users/allure/Desktop/oldman/unity-game/Library/PackageCache/com.unity.test-framework.performance@54c5bd86aedb)
+[Package Manager] com.unity.analytics is deprecated: This package is deprecated and won't be compatible with future Unity versions. It will only receive critical updates, with no new features or bug fixes. Migrate to Unity Analytics: https://docs.unity.com/en-us/analytics
+[Package Manager] com.unity.purchasing@4.15.0 is deprecated: Unity IAP 4 is unsupported as of June 8, 2026. IAP 5 is the supported version going forward.
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+Starting: /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/2000b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Users/allure/Desktop/oldman/unity-game
+DisplayProgressbar: Compiling Scripts
+Starting: /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/DotNetSdk/dotnet "/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/BuildPipeline/ScriptCompilationBuildProgram.exe" "Library/Bee/2000b0aE.dag.json" "Library/Bee/2000b0aE-inputdata.json" "Library/Bee/buildprogram0.traceevents"
+ExitCode: 4 Duration: 0s179ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/2000b0aE-inputdata.json
+*** Tundra requires additional run (0.16 seconds), 0 items updated, 0 evaluated
+WorkingDir: /Users/allure/Desktop/oldman/unity-game
+ExitCode: 0 Duration: 1s245ms
+Starting: /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/2000b0aE.dag" --continue-on-failure --dagfilejson="Library/Bee/2000b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: /Users/allure/Desktop/oldman/unity-game
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Resources/Scripting/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+ExitCode: 0 Duration: 0s512ms
+Finished compiling graph: 1279 nodes, 28117 flattened edges (23787 ToBuild, 224 ToUse), maximum node priority 1443
+[ 948/1276  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.50 seconds), 1 items updated, 1276 evaluated
+AssetDatabase: script compilation time: 2.559454s
+Total cache size 144341224
+Total cache size after purge 144341224, took 00:00:00.1099293
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 4.91 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.729 seconds
+Domain Reload Profiling: 1326ms
+	BeginReloadAssembly (118ms)
+		DisableScriptedObjects (9ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (440ms)
+		LoadAssemblies (238ms)
+		TypeCache.Refresh (111ms)
+			TypeCache.ScanAssembly (99ms)
+		AnalyzeDomain (37ms)
+			BuildScriptInfoCaches (34ms)
+	FinalizeReload (729ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (180ms)
+			ProcessInitializeOnLoadMethodAttributes (306ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Starting new worker id: 0 with log in /Users/allure/Desktop/oldman/unity-game/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=b9125dfb526274d02903aa021a988a12): Total: 4.682 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1431 ms
+		Asset DB Callback time: managed=30 ms, native=10 ms
+		Scripting: domain reloads=1, domain reload time=617 ms, compile time=2561 ms, other=30 ms
+		Project Asset Count: scripts=1549, non-scripts=2682
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 10.974ms
+	ApplyChangesToAssetFolders: 0.258ms
+	Scan: 424.882ms
+	Collect global state as custom dependencies: 15.566ms
+	CategorizeScriptCompilationAssets: 31.481ms
+	ProcessAssetsWithTransientArtifactChanges: 39.167ms
+	CategorizeAssets: 53.278ms
+	CompileScripts: 2560.820ms
+	ImportOutOfDateAssets: 748.586ms (738.167ms without children)
+		ReloadNativeAssets: 0.196ms
+		UnloadImportedAssets: 5.856ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.029ms
+		ImportSchedulerStart: 3.334ms
+	PostProcessAllAssets: 30.696ms
+		MonoPostProcessAllAssets: 30.660ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 11.512ms
+			SyncVS.PostprocessSyncProject 7.487ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.307ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.215ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.639ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.459ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.421ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.182ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.175ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.126ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.095ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.091ms
+	UnloadStreamsBegin: 0.908ms
+	PersistCurrentRevisions: 0.145ms
+	GenerateScriptTypeHashes: 1.529ms
+	GenerateScriptTypeSerializationHashes: 3.114ms
+	Untracked: 763.669ms
+
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Launching external process: /Applications/Unity/Hub/Editor/6000.6.5f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 0.427ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-unity-game
+2026-10-14 17:10:41.492 Unity[44647:15317307] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7a42ffde0 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6311 unused Assets / (10.6 MB). Loaded Objects now: 7241.
+Memory consumption went from 245.1 MB to 234.5 MB.
+Total: 19.000459 ms (FindLiveObjects: 0.551459 ms CreateObjectMapping: 0.174167 ms MarkObjects: 15.329083 ms  DeleteObjects: 2.759750 ms)
+
+Importing 'GUID: 00000000000000006100000000000000 - Path: ProjectSettings/GraphicsSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000006100000000000000' -> (Import Result ID: '8c339c3480842a1d3114dc4de0309ebc') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=a2dcdb8bc9503711bc0f2e2d72cfd36c DependenciesID=f38a60f9ef1f58844ad7863b45c8c985 StaticDependenciesID=41b075a9d82f305b33acc08efbd6140b 
+Asset Pipeline Refresh (id=2ce00c188d1ef4afea87345838f5afcd): Total: 0.162 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=d337c62284d96434484c21c93981c0e4): Total: 0.133 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.8 KB). Loaded Objects now: 7253.
+Memory consumption went from 233.3 MB to 233.3 MB.
+Total: 17.292459 ms (FindLiveObjects: 0.367916 ms CreateObjectMapping: 0.087500 ms MarkObjects: 16.666458 ms  DeleteObjects: 0.025625 ms)
+
+Importing 'GUID: b2ad68a4437564887a389298ddaf1221 - Path: Assets/_Game/Materials/M_OceanSurface.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b2ad68a4437564887a389298ddaf1221' -> (Import Result ID: '1349d91f4004e2fb85fe1998c82f4404') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=ca92c52d7cdf132821c1ed3c6ef1b1ef DependenciesID=5cc9260e461b877cf3ffa08da4a330f2 StaticDependenciesID=8cf007b9820e3a96e1560fe3c6441080 
+Asset Pipeline Refresh (id=424693452b70d454aa4a5f75b36d23c3): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6cf874a964b5248acb446dc47073da32 - Path: Assets/_Game/Materials/M_WoodSkiff.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6cf874a964b5248acb446dc47073da32' -> (Import Result ID: '71d990580b024f75020ba49b6307dfd6') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=c039fc9959767a5fd0579594016f1469 DependenciesID=c298f1c5877d21f67eba64cac66a1515 StaticDependenciesID=927444a7aaee2653aebbf9d87738af89 
+Asset Pipeline Refresh (id=54bc14336909c401a846ba2fa995f550): Total: 0.039 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 54fbe4df6f481400c86354211cb3a3cb - Path: Assets/_Game/Materials/M_BlueMarlin.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 54fbe4df6f481400c86354211cb3a3cb' -> (Import Result ID: 'ac303218a089a5af0d5ee5292870a652') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fec9cf72431cfc7504b30af2f6162467 DependenciesID=6025d4f4ff32a0904fd4f2628c54aa95 StaticDependenciesID=47a1c4da34f11de11695f3910774717e 
+Refreshing native plugins compatible for Editor in 2.13 ms, found 2 plugins.
+Asset Pipeline Refresh (id=1614ca5e6d40e42959b83198eb4fa3d9): Total: 0.039 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: b2ad68a4437564887a389298ddaf1221 - Path: Assets/_Game/Materials/M_OceanSurface.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b2ad68a4437564887a389298ddaf1221' -> (Import Result ID: '53d5ccfae6df3c0c792d029ccbc3ae40') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=ca92c52d7cdf132821c1ed3c6ef1b1ef DependenciesID=cde5dfca8fdcb522a53812bd4ecfd78e StaticDependenciesID=3b0e188e2752c42541b7c1decb3bd97e 
+Importing 'GUID: 54fbe4df6f481400c86354211cb3a3cb - Path: Assets/_Game/Materials/M_BlueMarlin.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 54fbe4df6f481400c86354211cb3a3cb' -> (Import Result ID: '56b81ef7700e9f360b39f550aed2613d') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=fec9cf72431cfc7504b30af2f6162467 DependenciesID=1921034a397e20d694275f6b97f4cc68 StaticDependenciesID=ba8773fa20902bbe9cad29c2d5c6387e 
+Importing 'GUID: 6cf874a964b5248acb446dc47073da32 - Path: Assets/_Game/Materials/M_WoodSkiff.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6cf874a964b5248acb446dc47073da32' -> (Import Result ID: '18905da6022ae614426fbfcf5de72ad0') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=c039fc9959767a5fd0579594016f1469 DependenciesID=e646ce10582eebd6859409c1dba84832 StaticDependenciesID=aeeac16b6e9483f1c5a2929666ca16a6 
+Refreshing native plugins compatible for Editor in 2.02 ms, found 2 plugins.
+Asset Pipeline Refresh (id=643332e8e205e4993886e0485b69ba2a): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 656b4bea74f1e4e72874dfde3c797213 - Path: Assets/_Game/Scenes/MainSeaScene.unity' with importer (DefaultImporter)
+Imported 'GUID: 656b4bea74f1e4e72874dfde3c797213' -> (Import Result ID: '88468b3fc154a1454215aaeb1c3d8e95') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=a72d1412a534931456cb06beb8810955 DependenciesID=3b8e1885d28823c0c4bc23a070b168bb StaticDependenciesID=d58cead348929e7e92b53743fd7782eb 
+Asset Pipeline Refresh (id=2987eaffeb7134bb18db3b9232025d58): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=783b40a424e8b4d4ea81198b059bee72): Total: 0.101 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+<color=cyan>[老人与海] 实体化场景构建完成！小船、海水、大马林鱼已全部就位：Assets/_Game/Scenes/MainSeaScene.unity</color>
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OldManAndTheSea.Editor.GameSceneBuilder:GenerateScene () (at Assets/_Game/Scripts/Editor/GameSceneBuilder.cs:167)
+
+(Filename: Assets/_Game/Scripts/Editor/GameSceneBuilder.cs Line: 167)
+
+Thread 0x4287b7000 may have been prematurely finalized
+Batchmode quit successfully invoked - shutting down!
+Thread 0x428b07000 may have been prematurely finalized
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+Worker ready: AssetImportWorkerHW0 0
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-allure-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-allure channel disconnected successfully.
+Thread 0x173d53000 may have been prematurely finalized
+Thread 0x173ddf000 may have been prematurely finalized
+Shut down UDS service system complete
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+debugger-agent: Unable to listen on 45
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0
+[Package Manager] Server process was shutdown
