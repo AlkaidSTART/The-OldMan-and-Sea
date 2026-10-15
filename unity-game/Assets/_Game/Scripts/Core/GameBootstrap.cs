@@ -10,7 +10,7 @@ namespace OldManAndTheSea.Core
 {
     /// <summary>
     /// 游戏一键自启动与组装引导器 (Game Bootstrap)
-    /// 挂载在主摄像机或空对象上，启动时自动构建完整的《老人与海》可玩原型场景
+    /// 挂载在主摄像机或全局游戏根对象上，统筹全主线剧情状态机与输入流
     /// </summary>
     public class GameBootstrap : MonoBehaviour
     {
@@ -26,34 +26,62 @@ namespace OldManAndTheSea.Core
             EnsureCoreComponents();
         }
 
-        private void Start()
+        private void Update()
         {
-            // 初始化系统绑定
-            if (linePhysics != null && boat != null && marlin != null)
+            var flow = StoryFlowManager.Instance;
+            if (flow == null) return;
+
+            // 如果当前在对话界面，禁止航行输入
+            if (flow.IsDialogueActive) return;
+
+            float dt = Time.deltaTime;
+
+            if (flow.CurrentPhase == StoryPhase.Act1_OpenSeaExploration)
             {
-                linePhysics.Initialize(boat.SternAnchorPoint, marlin.transform);
-                marlin.Initialize(boat.transform);
-                marlin.HookAndTow(); // 默认进入深潜拖拽阶段进行玩法测试
+                // 1. 开放海域自由航行阶段：划双桨推进与小艇转向
+                HandleOpenSeaNavigation(dt);
+            }
+            else if (flow.CurrentPhase == StoryPhase.Act2_MarlinTowingBattle)
+            {
+                // 2. 深海大鱼拉锯搏杀阶段
+                HandleMarlinStruggle(dt);
             }
         }
 
-        private void Update()
+        private void HandleOpenSeaNavigation(float dt)
         {
-            HandlePlayerInputs();
+            var flow = StoryFlowManager.Instance;
+
+            // 自由划桨与转向
+            float moveInput = Input.GetAxis("Vertical");
+            float turnInput = Input.GetAxis("Horizontal");
+            if (boat != null)
+            {
+                boat.ApplyRowInput(moveInput, turnInput);
+            }
+
+            // 按键 1~4 自由布饵
+            if (Input.GetKeyDown(KeyCode.Alpha1)) flow.bait40Fathoms = !flow.bait40Fathoms;
+            if (Input.GetKeyDown(KeyCode.Alpha2)) flow.bait75Fathoms = !flow.bait75Fathoms;
+            if (Input.GetKeyDown(KeyCode.Alpha3)) flow.bait100Fathoms = !flow.bait100Fathoms;
+            if (Input.GetKeyDown(KeyCode.Alpha4)) flow.bait125Fathoms = !flow.bait125Fathoms;
+
+            // 按空格键，或划入大井区 (Z > 120米) 且布有深线时，触发大鱼咬钩
+            if (Input.GetKeyDown(KeyCode.Space) || (boat != null && boat.transform.position.z > 140f && flow.bait100Fathoms))
+            {
+                flow.TriggerMarlinStrike();
+            }
         }
 
-        private void HandlePlayerInputs()
+        private void HandleMarlinStruggle(float dt)
         {
-            float dt = Time.deltaTime;
-
-            // 1. 小船划桨与转向
+            // 小船划桨与受巨鱼拖曳外力
             float moveInput = Input.GetAxis("Vertical");
             float turnInput = Input.GetAxis("Horizontal");
             if (boat != null)
             {
                 boat.ApplyRowInput(moveInput, turnInput);
 
-                // 受到来自大马林鱼的拖曳拉力
                 if (marlin != null && linePhysics != null)
                 {
                     Vector3 pullDir = (marlin.transform.position - boat.transform.position).normalized;
@@ -62,7 +90,7 @@ namespace OldManAndTheSea.Core
                 }
             }
 
-            // 2. 钓线阻尼与收线（空格键）
+            // 钓线阻尼与收线（按住空格）
             float dampingInput = Input.GetKey(KeyCode.Space) ? 1.0f : 0.05f;
             if (linePhysics != null && marlin != null && boat != null)
             {
@@ -71,131 +99,29 @@ namespace OldManAndTheSea.Core
 
                 linePhysics.UpdatePhysics(fishSpd, boatSpd, dampingInput, dt);
 
-                // 收线大力消耗体力
                 if (Input.GetKey(KeyCode.Space) && stats != null)
                 {
                     stats.ConsumeStamina(8f * dt);
                     if (linePhysics.CurrentTension > 85f)
                     {
-                        stats.TakeHandDamage(5f * dt); // 高张力手掌勒伤
+                        stats.TakeHandDamage(5f * dt);
                     }
                 }
             }
 
-            // 3. 生存操作交互快捷键
+            // 生存快捷键
             if (stats != null)
             {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    stats.DrinkWater();
-                }
-                if (Input.GetKey(KeyCode.Q))
-                {
-                    stats.MassageCramp(40f * dt);
-                }
+                if (Input.GetKeyDown(KeyCode.E)) stats.DrinkWater();
+                if (Input.GetKey(KeyCode.Q)) stats.MassageCramp(40f * dt);
             }
         }
 
         private void EnsureCoreComponents()
         {
-            // 确保 DialogueManager
-            if (DialogueManager.Instance == null)
-            {
-                gameObject.AddComponent<DialogueManager>();
-            }
-
-            // 确保生存数值
-            if (stats == null)
-            {
-                stats = gameObject.AddComponent<OldManSurvivalStats>();
-            }
-
-            // 确保武器系统
-            if (weaponSystem == null)
-            {
-                weaponSystem = gameObject.AddComponent<WeaponDegradationSystem>();
-            }
-
-            // 自动生成小船原型几何体
-            if (boat == null)
-            {
-                GameObject boatObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                boatObj.name = "Skiff_16ft";
-                boatObj.transform.position = new Vector3(0, 0.5f, 0);
-                boatObj.transform.localScale = new Vector3(1.6f, 0.8f, 4.8f); // 16英尺旧木小舟比例
-
-                var renderer = boatObj.GetComponent<Renderer>();
-                if (renderer != null)
-                {
-                    renderer.material.color = new Color(0.45f, 0.3f, 0.18f); // 木色
-                }
-
-                boat = boatObj.AddComponent<BoatController>();
-            }
-
-            // 自动生成大马林鱼原型几何体
-            if (marlin == null)
-            {
-                GameObject marlinObj = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-                marlinObj.name = "GiantMarlin_18ft";
-                marlinObj.transform.position = new Vector3(0, -2f, 25f);
-                marlinObj.transform.localScale = new Vector3(1.0f, 1.0f, 3.5f); // 18英尺流线鱼身
-                marlinObj.transform.rotation = Quaternion.Euler(0, 0, 90f);
-
-                var renderer = marlinObj.GetComponent<Renderer>();
-                if (renderer != null)
-                {
-                    renderer.material.color = new Color(0.2f, 0.35f, 0.7f); // 蓝紫色大西洋蓝马林
-                }
-
-                marlin = marlinObj.AddComponent<MarlinAI>();
-            }
-
-            // 自动配置钓线
-            if (linePhysics == null)
-            {
-                GameObject lineObj = new GameObject("FishingLine");
-                var lr = lineObj.AddComponent<LineRenderer>();
-                lr.startWidth = 0.05f;
-                lr.endWidth = 0.05f;
-                lr.material = new Material(Shader.Find("Sprites/Default"));
-                lr.startColor = new Color(0.9f, 0.9f, 0.7f, 0.9f);
-                lr.endColor = new Color(0.3f, 0.7f, 0.9f, 0.5f);
-
-                linePhysics = lineObj.AddComponent<FishingLinePhysics>();
-            }
-
-            // 自动生成海洋水面底板
-            GameObject ocean = GameObject.CreatePrimitive(PrimitiveType.Plane);
-            ocean.name = "OceanSurface";
-            ocean.transform.position = Vector3.zero;
-            ocean.transform.localScale = new Vector3(100f, 1f, 100f);
-            var oceanRenderer = ocean.GetComponent<Renderer>();
-            if (oceanRenderer != null)
-            {
-                oceanRenderer.material.color = new Color(0.08f, 0.22f, 0.38f, 0.85f); // 墨西哥湾流深青蓝
-            }
-
-            // 挂载 HUD
-            var hud = gameObject.GetComponent<GameHUD>();
-            if (hud == null)
-            {
-                hud = gameObject.AddComponent<GameHUD>();
-            }
-            // 自动反射绑定私有字段
-            SetPrivateField(hud, "linePhysics", linePhysics);
-            SetPrivateField(hud, "stats", stats);
-            SetPrivateField(hud, "marlin", marlin);
-            SetPrivateField(hud, "weaponSystem", weaponSystem);
-        }
-
-        private void SetPrivateField(object target, string fieldName, object value)
-        {
-            var field = target.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            if (field != null)
-            {
-                field.SetValue(target, value);
-            }
+            if (DialogueManager.Instance == null) gameObject.AddComponent<DialogueManager>();
+            if (stats == null) stats = gameObject.AddComponent<OldManSurvivalStats>();
+            if (weaponSystem == null) weaponSystem = gameObject.AddComponent<WeaponDegradationSystem>();
         }
     }
 }
